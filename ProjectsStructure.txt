@@ -1,0 +1,19 @@
+App
+	Heading
+	Body
+		CountryFilter
+			Label
+			Input
+		CountryList
+			List
+			ShowButton
+		CountryInfo
+			CountryName
+			Details
+			LanguagesList
+				EachLanguageDetails
+			CountryFlag
+			WeatherDetails
+				Temperature
+				TemperatureImage
+				WindSpeed
