@@ -2,12 +2,15 @@ const CountryFilter = ({countrySearchFilterValue,onCountrySearchFilterChange}) =
     return(
         <>
         <h3>
-            Search Countries:
+            <span className="SearchCountriesTitle">
+                Search Countries:
+            </span>
         </h3>
-        <input type="text" 
-        value={countrySearchFilterValue} 
-        onChange={onCountrySearchFilterChange}
+        <input className="SearchCountriesInput" type="search" placeholder="Search..."  
+            value={countrySearchFilterValue} 
+            onChange={onCountrySearchFilterChange}
         />
+        
         </>
     )
 }

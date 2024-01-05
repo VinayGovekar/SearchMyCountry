@@ -43,16 +43,22 @@ const CountryBody =()=>{
 
     const onCountryDetailsBack = () => setCountryToShow(null)
     return(
-        <>
-        <CountryFilter 
-        countrySearchFilterValue={countrySearchFilterValue}
-        onCountrySearchFilterChange={onCountrySearchFilterChange}/>
-    
-        <CountryBodyDetails countries={countries} 
-        handleShowCountryDetails={handleShowCountryDetails} 
-        countryToShow={countryToShow} 
-        onCountryDetailsBack={onCountryDetailsBack}/>
-        </>
+        <div className="CountryBody">
+            <div className="CountrySearchFilter">
+                <CountryFilter 
+                    countrySearchFilterValue={countrySearchFilterValue}
+                    onCountrySearchFilterChange={onCountrySearchFilterChange}
+                />
+            </div>
+            <div className="CountryBodyDetails">
+                <CountryBodyDetails 
+                    countries={countries} 
+                    handleShowCountryDetails={handleShowCountryDetails} 
+                    countryToShow={countryToShow} 
+                    onCountryDetailsBack={onCountryDetailsBack}
+                />
+            </div>
+        </div>
     )
 }
 export default CountryBody

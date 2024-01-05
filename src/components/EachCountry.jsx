@@ -2,13 +2,10 @@ import Button from "./Button"
 
 const EachCountry = ({country,handleShowCountryDetails})=>{
     return(
-        <>
-        <tr>
-            <td>{country.name.common}</td>
-            <td><Button text={"Show"} handleShowCountryDetails={handleShowCountryDetails} country={country}/></td>
-        </tr>
-        
-        </>
+        <div className="EachCountryBox">
+        {country.name.common}
+        <Button text={"Show"} handleShowCountryDetails={handleShowCountryDetails} country={country}/>
+        </div>
     )
 }
 

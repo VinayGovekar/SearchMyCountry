@@ -3,11 +3,10 @@ import CountryList from "./CountryList"
 const CountryBodyDetails = ({countries,handleShowCountryDetails,countryToShow,onCountryDetailsBack})=>{
     if(countryToShow===null){
         return(
-            <>
+            
             <CountryList countries={countries}
             handleShowCountryDetails={handleShowCountryDetails}
             />
-            </>
         )
     }
     return(
