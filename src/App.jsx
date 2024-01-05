@@ -4,10 +4,12 @@ import CountryHeader from "./components/CountryHeader"
 function App() {
 
   return (
-    <>
+    
+    <div>
     <CountryHeader/>
     <CountryBody/>
-    </>
+    </div>
+    
   )
 }
 
